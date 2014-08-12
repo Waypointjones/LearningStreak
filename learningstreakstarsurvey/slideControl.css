@@ -1,0 +1,95 @@
+ul, li, label {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+.clearfix:before, .clearfix:after {
+    content: "\0020"; 
+    display: block; 
+    height: 0; 
+    overflow: hidden;
+}
+
+.clearfix:after { clear: both; }
+
+.clearfix { zoom: 1; }
+
+.content {margin:20px auto; max-width:550px; width: 90%; padding:15px; border:1px solid #ccc; border-radius:5px; list-style-type:none;}
+.content h2 {font-size: 26px; font-weight: normal; padding: 0px; margin: 0px; line-height: 16px; padding-top: 10px; }
+
+li {margin:10px 0;}
+
+ul {list-style-type:none;}
+
+ul.options {margin-left:20px; margin-bottom:20px; list-style-type:disc;}
+
+ul.options li {margin:5px 0; font-size:0.85em;}
+	
+input.slideControl {width:5%; font-size:14px; float:left; padding:3px 5px; border:1px solid #ccc; border-radius:5px; text-align:center; color:#333; font-weight:normal;}
+	
+label {font-size:14px; font-weight:normal; float:left; display:block; margin-top:20px; margin-bottom: 0px; clear:both; padding: 0px;}
+.slideControlContainer {
+	height:10px; 
+	background: #efefef; /* Old browsers */
+	border:1px solid #ccc; box-shadow:inset 0 1px 0 #fff;
+	border-radius:7px;
+	cursor:pointer;
+	width:80%;
+	float:left;
+	margin:8px 10px 0 0;
+}
+	
+.slideControlFill {
+	background: #4fc4d4; /* Old browsers */
+	display:block;
+	height:100%;
+	border-radius:7px;
+	box-shadow:inset 0 1px 0 #F9D7C5;
+	position:relative;
+	z-index:1;
+	overflow:visible !important;
+}
+	
+.slideControlHandle {
+	display:block; 
+	background: #4fc4d4; /* Old browsers */
+	border-radius:15px;
+	border:5px solid #fff;
+	width:10px;
+	height:10px;
+	box-shadow:0 0 1px #555;
+	position:absolute;
+	right:0;
+	top:-5px;
+	z-index:5;
+	cursor:pointer;
+}
+
+.ieShadow {
+	zoom: 1;
+	filter: progid:DXImageTransform.Microsoft.Shadow(color=#aaaaaa,direction=0,strength=1), 
+  progid:DXImageTransform.Microsoft.Shadow(color=#aaaaaa,direction=45,strength=1), 
+  progid:DXImageTransform.Microsoft.Shadow(color=#aaaaaa,direction=90,strength=1), 
+  progid:DXImageTransform.Microsoft.Shadow(color=#aaaaaa,direction=135,strength=1), 
+  progid:DXImageTransform.Microsoft.Shadow(color=#aaaaaa,direction=180,strength=1), 
+  progid:DXImageTransform.Microsoft.Shadow(color=#aaaaaa,direction=225,strength=1), 
+  progid:DXImageTransform.Microsoft.Shadow(color=#aaaaaa,direction=270,strength=1), 
+  progid:DXImageTransform.Microsoft.Shadow(color=#aaaaaa,direction=315,strength=1);
+	top:-8px;
+	right:-4px;
+}
+	
+.slideControlInput {
+	width:35px;
+	font-size:1.5em;
+	padding:3px 5px;
+	border:1px solid #ccc;
+	border-radius:5px;
+	text-align:center;
+	color:#333;
+	font-weight:bold;
+}

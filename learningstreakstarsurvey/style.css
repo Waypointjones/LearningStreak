@@ -1,0 +1,371 @@
+/*
+Theme Name: LearningStreak
+Description: WordPress theme for LearningStreak
+Author: Araceli Richardson
+
+*/
+
+/*** GLOBAL : GENERAL STYLE DEFAULTS ***/
+html
+{
+	margin: 0;
+	padding: 0;
+}
+/* HTML5 tags */
+header, section, footer, aside, nav, article, figure {
+	display: block;
+}
+
+@font-face { font-family: OpenSansReg; src:url(fonts/OpenSans-Regular.ttf) format('truetype'); }
+@font-face { font-family: OpenSansSemiBold; src:url(fonts/OpenSans-Semibold.ttf) format('truetype'); }
+
+body { font-family: OpenSansReg, Arial, Helvetica, sans-serif; color: #747474; background-color: #4fc4d4; margin: 0; line-height: 26px; }
+header {width: 100%; text-align:center; background-color: #FFF; padding-top: 20px; position:fixed; z-index: 20; margin-top: 0px; top: 0px; height: 125px;}
+header .logo {width: 100%; text-align:center;}
+nav {width: 100%; text-align:center; padding: 10px 0px;}
+nav ul {list-style: none; padding: 0px; width: 70%; margin: 0px auto;}
+nav ul li {list-style: none; display: inline-block; }
+nav ul li a { font-family: OpenSansSemiBold, Arial, Helvetica, sans-serif; display: inline-block; color: #58585a !important; font-size: 20px; padding: 5px 30px; text-align:center; text-decoration: none; text-transform: uppercase;}
+nav ul li a:hover {color: #4fc4d4 !important;}
+nav ul li a.selected {color: #4fc4d4 !important;}
+
+h1, h2, h3, h4, h5, h6
+{ 
+	font-weight: normal;
+	clear: both;
+}
+hr
+{
+	background-color: #999;
+	border: 0;
+	height: 1px;
+	margin-bottom: 1.5em;
+}
+pre
+{
+	font: 11px Monaco, monospace;
+	line-height: 1.5;
+	margin-bottom: 1.5em;
+}
+code
+{
+	font: 11px Monaco, monospace;
+}
+p
+{
+	margin: 4px 0 12px 0;
+}
+a
+{
+	color: #0a77e6;
+}
+a:hover
+{
+	color: #065c88;
+}
+a:visited
+{
+	color: #8b46d1;
+}
+
+
+
+/*** PAGE LAYOUT ***/
+
+/* Styles that affect the entire layout of the page */
+div#container
+{
+	margin: 4px 4px 4px 4px;
+}
+div#content
+{
+	
+}
+
+
+/*** HEADER : MENU ***/
+
+/* To see a menu in your header, you'll need to first add one in WordPress Admin */
+
+.menu ul
+{
+    list-style: none;
+    margin: 0;
+	padding: 0px; width: 70%; margin: 0px auto;
+}
+.menu ul ul
+{
+    display: none;
+}
+.menu li
+{
+    list-style: none; display: inline-block;
+}
+.menu-item
+{
+	
+}
+.menu-item a
+{
+	font-family: OpenSansSemiBold, Arial, Helvetica, sans-serif; display: inline-block; color: #58585a; font-size: 20px; padding: 15px 30px; text-align:center; text-decoration: none; text-transform: uppercase;
+}
+.menu-item a:hover
+{
+	color: #4fc4d4;
+}
+
+
+
+/*** HEADER : OTHER ***/
+
+
+
+/*** CONTENT : POSTS AND PAGES ***/
+
+/* Entry and Page Titles */
+h1.entry-title
+{
+	
+}
+h2.entry-title
+{
+	
+}
+h2.entry-title a
+{
+	
+}
+h1.page-title
+{
+	
+}
+
+/* Media Alignment */
+.alignright
+{
+	/* Style for right-aligned images in posts */
+	padding: 8px 0 8px 8px;
+	float: right;
+}
+.alignleft
+{
+	/* Style for left-aligned images in posts */
+	padding: 8px 8px 8px 0;
+	float: left;
+}
+
+/* Entry Content */
+.entry-content
+{
+	/* Style that affects actual entry/post content */
+}
+.entry-content a
+{
+	
+}
+.entry-content a:hover
+{
+	
+}
+.entry-content h1, h2, h3, h4, h5
+{
+	
+}
+.entry-content ol li
+{
+	
+}
+
+.entry-utility
+{
+	/* Style for the entry utility, which sits below a post and provides info like categories, tags, feeds, and an edit link (for authors) */
+}
+.entry-meta
+{
+	/* Style for the entry metadata (author, etc.) */
+}
+.skip-link
+{
+	/* Style for the skip link */
+	/*position: absolute;
+	left: -9000px;*/
+}
+.navigation
+{
+	/* Style for the navigation links (next/previous post) on a given post */
+}
+
+
+/*** CONTENT : COMMENTS ***/
+
+div#comments
+{
+	/* Style that affects the DIV containing all the comments */
+}
+.comments h3
+{
+	/* H3 header style for comments */
+}
+.comments ol
+{
+	/* Comments are displayed as ordered lists by default, so you want to style that list so it looks the way you want */
+}
+.comments ol li
+{
+	/* Style each list item in the comments ordered list */
+}
+.comments img
+{
+	/* Style for the user avatar beside each comment */
+	float: left;
+	margin: 0 12px 8px 0;
+}
+.comments .comment
+{
+	/* Style that applies to each individual comment in a series of comments */
+}
+
+.children ul li
+{
+	/* A style that refers to the children (as in, responses to) any given comment */
+}
+
+.comment-reply-link
+{
+	/* Style for the "Reply" link on a comment */
+}
+.comment-meta
+{
+	/* Style for metadata for a comment */
+}
+div#respond
+{
+	/* DIV that contains the comment response form */
+}
+div#respond h3
+{
+	/* H3 header for the comment response form */
+}
+
+
+/*** CONTENT : SIDEBAR ***/
+div#primary
+{
+	/* Primary Widget Area DIV */
+}
+div#secondary
+{
+	/* Secondary Widget Area DIV */
+}
+.widget-area
+{
+	/* Class that applies to BOTH widget areas */
+}
+.xoxo
+{
+	/* Class that applies to each item in each widget area (an unordered list class) */
+}
+
+
+/*** FOOTER ***/
+div#footer
+{
+	float: left;
+	clear: both;
+}
+
+
+/*** YOUR CSS ***/
+
+
+.mainContainer {width: 100%;}
+section {width: 100%; padding: 10px 0px;}
+
+.homesection {background: url(images/home_background.jpg) bottom center no-repeat #FFF; background-size:cover; margin-top: 125px; padding-bottom: 50px; position:relative; z-index: 10}
+.aboutsection {background: url(images/about_background.jpg) center center no-repeat #FFF; background-size:cover; color: #fff;}
+.howitworkssection {background-color: #fff; padding-bottom: 50px; position:relative;}
+.progresssection {background-color: #a1a1a1; padding-bottom: 50px; color: #fff;}
+.contactsection {padding-bottom: 50px; color: #fff;}
+.defaultsection {padding-bottom: 50px; color: #fff; min-height: 300px; clear:both; display:block; background-color: #fff;}
+.slidesection {padding-bottom: 50px; background-color: #fff; color: #747474; min-height: 300px; clear:both; display:block; margin-top: 125px;}
+
+
+
+.homesection article {max-width: 1000px; width: 98%; margin: 0px auto; text-align: center;}
+.aboutsection article {padding: 150px 0; max-width: 1000px; width: 98%; margin: 0px auto; display: block; vertical-align: middle; text-align: center;}
+
+.howitworkssection article {padding: 50px 0 20px 0;max-width: 1000px; width: 98%; margin: 0px auto; text-align: center;}
+.progresssection article {padding: 50px 0; max-width: 1000px; width: 98%; margin: 0px auto; display: block; vertical-align: middle; text-align: center;}
+.contactsection article {padding: 50px 0; max-width: 1000px; width: 98%; margin: 0px auto; display: block; vertical-align: middle; text-align: center;}
+.defaultsection article {padding: 50px 0; max-width: 1000px; width: 98%; margin: 0px auto; display: block; vertical-align: middle; text-align: center;}
+.slidesection article {padding: 50px 0; max-width: 1000px; width: 98%; margin: 0px auto; display: block; vertical-align: middle; text-align: center;}
+
+
+.box30Percent {width: 28%; float: left; padding: 10px; margin-right: 3%; color: #747474;}
+.box30Percent p {padding-bottom: 0px; }
+.aboutTextContainer {width: 80%; margin: 0px auto;}
+.contactTextContainer {width: 45%; margin: 0px auto;}
+
+
+
+h1 {font-size: 32px; font-weight: normal; padding-bottom: 20px; margin: 0px; line-height: 36px; }
+h2 {font-size: 26px; font-weight: normal; padding-bottom: 20px; margin: 0px; line-height: 30px; }
+h3 {font-size: 26px; font-weight: normal; padding: 0px; margin: 0px; line-height: 30px; }
+.signmeupbutton {display: block; text-align:center; width: 230px; background-color: #4fc4d4; color: #fff !important; text-decoration: none; padding: 10px 20px; text-transform: uppercase; margin: 0 auto; position: relative; margin-top: -188px; z-index: 18; font-size: 20px; font-weight: normal;font-family: OpenSansSemiBold, Arial, Helvetica, sans-serif; margin-bottom: 70px;}
+.clearBoth {clear: both;}
+.noRightPadding {padding-right: 0 !important ;}
+img { border: none; }
+.anchor {
+    position:relative;
+    top:-120px;
+    display: block;
+}
+.hiwIcon {color: #747474;}
+
+footer {max-width: 1000px; width: 98%; margin: 0px auto; text-align: center; color:#FFF; /*border-top: 1px solid #FFF;*/ padding: 60px 0 130px 0; font-size: 12px; margin-top: 30px;}
+
+p { padding-bottom: 20px;}
+
+.content ul, .content li, .content label {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	text-align: center;
+}
+
+.clearfix:before, .clearfix:after {
+    content: "\0020"; 
+    display: block; 
+    height: 0; 
+    overflow: hidden;
+}
+
+.clearfix:after { clear: both; }
+
+.clearfix { zoom: 1; }
+
+.content {margin:20px auto; max-width:550px; width: 90%; padding:15px; border:1px solid #ccc; border-radius:5px; list-style-type:none;}
+.content h2 {font-family: OpenSansReg, Arial, Helvetica, sans-serif; font-size: 26px; font-weight: normal; padding: 0px; margin: 0px; line-height: 16px; padding-top: 10px; }
+
+.content ul {list-style-type:none; width: 94%; margin: 0px auto; margin: 0;}
+.content ul li {margin:5px 0; font-size:14px; display:block;}
+.content label {font-size:14px; font-weight:normal; display:block; margin-top:20px; margin-bottom: 0px; clear:both; padding: 0px; text-align:center;}
+
+.inputRadius1,.inputRadius2,.inputRadius3,.inputRadius4 {width: 36px; height: 36px; border-radius: 18px; cursor: pointer; margin-right: 30px; margin-top: 10px; background:#CCC; font-size: 12px; font-weight: bold; text-align:center; border: none;}
+.paddingTop {clear: both; padding-top: 0px; display:inline-block;}
+.paddingTop30 {clear: both; padding-top: 30px; display:block;}
+.numberContainer {text-align: center; margin: 0px; width: 100%; margin: 0px auto;}
+.content .button {display: inline-block; text-align:center; background-color: #4fc4d4; color: #fff !important; text-decoration: none; padding: 10px 50px; text-transform: uppercase; margin: 0 auto; font-size: 18px; border: none; font-weight: normal;font-family: OpenSansSemiBold, Arial, Helvetica, sans-serif; margin-bottom: 20px;}
+.lastInput {margin-right: 0px;}
+.shadow {
+width: 30px; height: 30px; border-radius: 17px;
+background-color: #4fc4d5 !important; border: 3px solid #fff; color: #fff;
+-webkit-box-shadow: 1px 0px 30px 0px rgba(79, 196, 213, 1);
+-moz-box-shadow:    1px 0px 30px 0px rgba(79, 196, 213, 1);
+box-shadow:         1px 0px 30px 0px rgba(79, 196, 213, 1);
+}
+
+.w2lsubmit .w2linput{ background-color: #3ad342 !important; color: #fff !important;}
